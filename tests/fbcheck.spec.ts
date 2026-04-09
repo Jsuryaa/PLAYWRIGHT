@@ -47,7 +47,7 @@ test("shop test", async ({}) => {
   await page.fill("#user-name", "standard_user");
   await page.fill("#password",  "secret_sauce");
   await page.click("#login-button");
-  await page.screenshot({path:'screenshots/logintest.png', fullPage:true});
+  // await page.screenshot({path:'screenshots/logintest.png', fullPage:true});
   await page.click("#add-to-cart-sauce-labs-backpack");
   await page.click(".shopping_cart_link");
 
